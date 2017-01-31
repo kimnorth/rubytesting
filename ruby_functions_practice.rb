@@ -1,3 +1,5 @@
+include Math
+
 def return_10
   return 10
 end
@@ -50,5 +52,14 @@ def number_to_short_month_name(a)
   end
 end
 
-def volume_of_cube(a, b)
-  
+def volume_of_cube(a)
+  return a ** 3
+end
+
+def volume_of_sphere(r)
+  return (((4.to_f/3.to_f)) * Math::PI * (r ** r))
+end
+
+def convert_far_to_cel(a)
+  return ((a - 32) * (5.to_f / 9.to_f))
+end
